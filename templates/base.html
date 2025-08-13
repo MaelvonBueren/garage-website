@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',
+    filename='css/styles.css')}}"
+    />
+    <title>Garage Kronenplatz AG</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="container">
+      <nav>
+        <div class="logo"><a href="#">LOGO</a></div>
+        <div class="menu-items">
+          <a href="#">Team</a>
+          <a href="#">Dientleistungen</a>
+          <a href="#">Kontakt</a>
+          <a href="#" class="btn">Occasionen</a>
+        </div>
+      </nav>
+    </div>
+    <!-- end nav bar -->
+
+    {% block content %} {% endblock %}
+  </body>
+</html>
