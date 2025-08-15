@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
-  --dark-color: #0f1112;
+  --dark-color: #0f0f0f;
   --light-color: #f9fafb;
-  --accent-color: #a1866f;
+  --accent-color: #836953;
 }
 
 *,
@@ -20,20 +20,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 16px 32px;
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   box-shadow: 0 8px 42px rgba(0, 0, 0, 0.1);
-}
-nav .logo {
-  font-weight: 700;
-  font-size: 18px;
-}
-nav .logo a {
-  text-decoration: none;
 }
 nav .menu-items {
   display: flex;
@@ -42,7 +37,7 @@ nav .menu-items {
   font-weight: 500;
 }
 nav .menu-items a {
-  color: var(--dark-color);
+  color: var(--light-color);
   text-decoration: none;
 }
 nav .menu-items a:hover {
@@ -74,6 +69,23 @@ nav .menu-items a.btn:hover {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+.logo svg {
+  width: 32px;
+  height: auto;
+  color: var(--light-color);
+}
+.logo .logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--light-color);
+  letter-spacing: 0.5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
